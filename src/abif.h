@@ -328,7 +328,7 @@ readab(std::string const& filename, Trace& tr) {
       ab.key = ab.name + "." + _toString(ab.number);
       if (ab.name == "PCON") ab.etype = 1;
       abi.push_back(ab);
-      //std::cout << ab.key << "\t" << ab.name << "\t" << ab.number << "\t" << ab.etype << "\t" << ab.esize << "\t" << ab.nelements << "\t" << ab.dsize << "\t" << ab.doffset << std::endl;
+      std::cout << ab.key << "\t" << ab.name << "\t" << ab.number << "\t" << ab.etype << "\t" << ab.esize << "\t" << ab.nelements << "\t" << ab.dsize << "\t" << ab.doffset << std::endl;
     }
     
     // Get what we need and dump the rest of this stupid format
